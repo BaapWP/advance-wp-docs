@@ -13,7 +13,8 @@ If you are really particular about keeping documentation up-to-date, you have to
 
 ### Tools
 
-[Puppeteer](https://developers.google.com/web/tools/puppeteer/)
+ * [Puppeteer](https://developers.google.com/web/tools/puppeteer/): for taking screenshots/ snapshots/ screencasts of feature elements
+ * [Kue](https://github.com/Automattic/kue) for creating and processing a queue of documentation updates.
  
 ### Configuration for term/doc/section 
 
