@@ -38,9 +38,8 @@ On initial setup, using puppeteer (which is a wrapper for headless google chrome
  1. A text snapshot of the html content of the associated dom element. 
  1. A text snapshot of the css associated with rendered dom element.
 
-
- 1. Whenever a plugin or theme is released on a git repository (Github/ Bitbucket/ Gitlab), a webhook can be triggered.
- 1. This webhook will call our solution into action.
+Whenever a plugin or theme is released on a git repository (Github/ Bitbucket/ Gitlab)
+ 1. A webhook can be triggered which will call our solution into action.
  1. It will look for the taxonomy term in the docs (or individual docs) associated with the product.
  1. It will check the demo site whose url has been setup and re-scan everything.
  1. If it cannot find the associated DOM element, anymore, it'll assume that it has changed and trigger a notification to update the settings to the new identifier.
@@ -48,8 +47,10 @@ On initial setup, using puppeteer (which is a wrapper for headless google chrome
      1. If there are no changes, it won't do anything.
 	 1. If there are changes however, it will trigger a notification to update documentation.
 	 1. In addition, it will regenerate and replace the original screenshot automatically.
-	 
+
+### Components
+
+ 1. Documentation Plugin (to create docs and settings related to docs)
+ 1. Documentation Tracker (Node.js app) or an API based service for shared sites.
+ 
 That's how much I could think of, at the moment. Will revise as needed
-
-
-
