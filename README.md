@@ -18,9 +18,13 @@ If you are really particular about keeping documentation up-to-date, you have to
 ### Configuration for term/doc/section 
 
  1. A toogle for including an automated screenshot.
- 1. A url (`wp-admin` or otherwise) including a bookmark anchor that displays the functionality described in the doc. This anchor can represent a tab in a tabbed interface. This will be used to automate screenshots.
  1. A product repository. This will be used to trigger potential updates and notifications for updates.
- 1. Need to think about form inputs (triggering a dropdown for screenshots, triggering selection of an option in such a dropdown, checkbox, radio, autocomplete, etc).
+ 1. A url (`wp-admin` or otherwise) including a bookmark anchor for the DOM element that displays the functionality described in the doc. ~~This anchor can represent a tab in a tabbed interface. This will be used to automate screenshots.~~
+ 1. ~~Need to think about form inputs (triggering a dropdown for screenshots, triggering selection of an option in such a dropdown, checkbox, radio, autocomplete, etc).~~ Need to think about a way to describe states of the DOM element for screenshots.
+     1. Could be simple text instructions like _Display select#select-id options_, _Click #tab2_, _Select select#select-id "option-text"_, _Type #input-id "text-to-enter-in-input-or-autocomplete-or-select-2"_, _Select input#checkbox_, _Unselect input#checkbox_, etc.
+	 1. Need to write down an exhaustive descriptions of actions.
+	 1. Have something to highlight a particular element in the tree with CSS `outline`– _Highlight #div-id_. `outline` is similar to `focus` state and won't disturb the layout unlike border.
+	 1. Have a way to express a series of instructions in plain English (one per line, some other separator).
  
  
  The set-up would be a trickle down configuration that can be over-ridden at any level:
