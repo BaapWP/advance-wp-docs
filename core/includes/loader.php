@@ -1,6 +1,6 @@
 <?php
 
-use BWP\AdvanceDocs\Core as Core;
+use BWPAdvanceDocs\Core as Core;
 
 $load = new Core\Loader;
 

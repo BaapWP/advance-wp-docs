@@ -4,7 +4,7 @@
  *
  * @since 1.0.0
  */
-define( 'BWP\AdvanceDocs\URL', trailingslashit( plugin_dir_url( $file ) ) );
+define( 'BWPAdvanceDocs\URL', trailingslashit( plugin_dir_url( $file ) ) );
 
 
 /**
@@ -12,21 +12,21 @@ define( 'BWP\AdvanceDocs\URL', trailingslashit( plugin_dir_url( $file ) ) );
  *
  * @since 1.0.0
  */
-define( 'BWP\AdvanceDocs\VERSION', '1.0.0-alpha' );
+define( 'BWPAdvanceDocs\VERSION', '1.0.0-alpha' );
 
 /**
  * Prefix to use in keys and other identifiers
  */
-define( 'BWP\AdvanceDocs\PREFIX', 'bwp-ad-' );
+define( 'BWPAdvanceDocs\PREFIX', 'bwp-ad-' );
 
 /**
  * Underscored prefix to use in identifiers
  */
-define( 'BWP\AdvanceDocs\_PREFIX', 'bwp_ad_' );
+define( 'BWPAdvanceDocs\_PREFIX', 'bwp_ad_' );
 
 global $wpdb;
 
 /**
  * Prefix for plugin's tables
  */
-define( 'BWP\AdvanceDocs\TABLE_PREFIX', $wpdb->prefix . \BWP\AdvanceDocs\_PREFIX );
+define( 'BWPAdvanceDocs\TABLE_PREFIX', $wpdb->prefix . \BWP\AdvanceDocs\_PREFIX );

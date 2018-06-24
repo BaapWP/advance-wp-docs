@@ -5,7 +5,7 @@
  * @since 1.0.0
  */
 
-namespace BWP\AdvanceDocs\Core;
+namespace BWPAdvanceDocs\Core;
 
 /**
  * Registers Custom WordPress Objects.

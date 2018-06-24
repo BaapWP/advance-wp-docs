@@ -4,7 +4,7 @@
  *
  * @since 1.0.0
  */
-namespace BWP\AdvanceDocs\Core;
+namespace BWPAdvanceDocs\Core;
 
 /**
  * Loads the plugin

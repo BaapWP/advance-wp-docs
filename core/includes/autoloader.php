@@ -24,7 +24,7 @@ spl_autoload_register( 'bwp_advance_docs_autoload' );
 function bwp_advance_docs_autoload( $class_name ) {
 
 	// If the specified $class_name does not include our namespace, duck out.
-	if ( false === strpos( $class_name, 'BWP\AdvanceDocs' ) ) {
+	if ( false === strpos( $class_name, 'BWPAdvanceDocs' ) ) {
 		return;
 	}
 
@@ -43,7 +43,7 @@ function bwp_advance_docs_autoload( $class_name ) {
 	$namespace = trailingslashit(implode('/', $file_parts));
 
 	// Now build a path to the file using mapping to the file location.
-	$filepath = \BWP\AdvanceDocs\PATH . $namespace.$file_name;
+	$filepath = \BWPAdvanceDocs\PATH . $namespace.$file_name;
 
 	// If the file exists in the specified path, then include it.
 	if ( file_exists( $filepath ) ) {
