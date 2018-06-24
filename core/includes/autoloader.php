@@ -21,7 +21,7 @@ spl_autoload_register( 'bwp_advance_docs_autoload' );
  *
  * @param string $class_name The fully-qualified name of the class to load.
  */
-function bwp_advance_docs( $class_name ) {
+function bwp_advance_docs_autoload( $class_name ) {
 
 	// If the specified $class_name does not include our namespace, duck out.
 	if ( false === strpos( $class_name, 'BWP\AdvanceDocs' ) ) {
