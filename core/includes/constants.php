@@ -29,4 +29,4 @@ global $wpdb;
 /**
  * Prefix for plugin's tables
  */
-define( 'BWPAdvanceDocs\TABLE_PREFIX', $wpdb->prefix . \BWP\AdvanceDocs\_PREFIX );
+define( 'BWPAdvanceDocs\TABLE_PREFIX', $wpdb->prefix . \BWPAdvanceDocs\_PREFIX );
