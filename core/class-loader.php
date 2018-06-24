@@ -6,6 +6,8 @@
  */
 namespace BWPAdvanceDocs\Core;
 
+use BWPAdvanceDocs\Core as Core;
+
 /**
  * Loads the plugin
  */
@@ -28,7 +30,7 @@ class Loader {
 		);
 
 		// Register Custom Content Types
-		$register_objects = new \Core\Register_Objects;
+		$register_objects = new Core\Register_Objects;
 		$register_objects->init();
 	}
 
